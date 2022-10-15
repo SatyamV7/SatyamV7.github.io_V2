@@ -1,0 +1,3 @@
+User-agent: *
+Crawl-delay: 10
+Sitemap: https://codingsatyamweb.netlify.app/sitemap.xml

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>SatyamV7</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="192x192" href="../icons/manifest/icon-192.png">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="google-site-verification" content="luIn9RTzM-cYXUWiXLev30mFX6FmvAdiowmlIpcm_RY" />
+    <meta name="description" content="Second verson of my portfolio website made by me">
+    <style>
+        @import url(../fonts/fonts.css);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "SF Mono", "Lexend", -apple-system, system-ui, sans-serif;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            scrollbar-width: thin;
+            scrollbar-color: #0a192f;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #495670;
+            border-radius: 5px;
+        }
+
+        body {
+            background: #0a192f;
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        ::selection {
+            color: #ccd6f6;
+            background: #233554;
+        }
+
+        body::before,
+        body::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .root {
+            height: 100vh;
+            width: 100%;
+            background: transparent;
+            z-index: 12;
+            border-radius: 5px;
+            margin: auto;
+            position: relative;
+        }
+
+        .root .navbar {
+            margin: auto;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 35px 50px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .menu {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .navbar .menu li {
+            list-style: none;
+            margin: 0 54px;
+        }
+
+        .navbar .menu .Projects {
+            margin-right: 0px !important;
+        }
+
+        .navbar .menu .Home {
+            margin-left: 0px !important;
+        }
+
+        .navbar .menu a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 17.5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .menu a .NavNum {
+            color: #64FFDA;
+            font-size: 17.7px;
+            margin-right: 4px;
+        }
+
+        .navbar .menu a:hover {
+            color: #64FFDA;
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .root .content {
+            top: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            color: rgb(255, 255, 255);
+            width: -webkit-fill-available;
+            min-height: -webkit-fill-available;
+        }
+
+        .StyledAboutTextSection {
+            width: 30%;
+            margin-left: 20%;
+        }
+
+        .StyledAboutTextSection .Heading {
+            position: relative;
+            margin: 10px 0px 40px;
+            color: #ccd6f6;
+            font-size: 32px;
+            font-weight: 600;
+            font-family: Lexend;
+            transition-delay: 200ms;
+            margin-top: 15px;
+        }
+
+        .StyledAboutTextSection .Heading::after {
+            content: "";
+            display: block;
+            position: relative;
+            top: -16px;
+            left: 236.08px;
+            width: 339.92px;
+            height: 1px;
+            background-color: #233554;
+        }
+
+        .StyledAboutTextSection .StyledTextAbout {
+            top: 20px;
+            position: relative;
+            font-family: Lexend;
+            transition-delay: 400ms;
+        }
+
+        .StyledSkillsList ul.skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(140px, 200px));
+            gap: 0px 10px;
+            padding: 0px;
+            position: relative;
+            top: 50px;
+            overflow: hidden;
+            list-style: none;
+        }
+
+        .StyledSkillsList ul.skills-list li {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-size: 13px;
+        }
+
+        .StyledSkillsList ul.skills-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0px;
+            color: #64ffDA;
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        .StyledImageSection {
+            margin-left: 200px;
+        }
+
+        .StyledSocialSection {
+            width: 40px;
+            position: fixed;
+            bottom: 0px;
+            left: 40px;
+            right: auto;
+            z-index: 10;
+            color: #a8b2d1;
+        }
+
+        .SocialLinks {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .SocialLinks li {
+            margin-bottom: 20px;
+        }
+
+        .SocialLinks li a {
+            padding: 10px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            text-decoration-skip-ink: auto;
+            color: inherit;
+            position: relative;
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .SocialLinks li a:hover,
+        .SocialLinks li a:focus {
+            transform: translateY(-3px);
+        }
+
+        .SocialLinks li a svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        svg.feather {
+            fill: none;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: currentcolor;
+            vertical-align: middle;
+        }
+
+        .SocialLinks::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 120px;
+            margin: 0px auto;
+            background-color: #a8b2d1;
+        }
+
+        .StyledMailSection {
+            width: 40px;
+            position: fixed;
+            bottom: 0px;
+            left: auto;
+            right: 40px;
+            z-index: 10;
+            color: #a8b2d1;
+        }
+
+        .MailContent {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .MailContent a {
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+        }
+
+        .MailContent a:hover,
+        .MailContent a:focus {
+            transform: translateY(-3px);
+        }
+
+        a:hover,
+        a:focus {
+            color: #64FFDA;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            text-decoration-skip-ink: auto;
+            color: inherit;
+            position: relative;
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .MailContent::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 120px;
+            margin: 0px auto;
+            background-color: #a8b2d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../"><img src="../icons/favicon.ico" width="50" height="50" alt="logo"></a>
+            </div>
+            <ul class="menu">
+                <li class="Home">
+                    <a href="../" class="StyledMain">
+                        <font color="#64FFDA">01.&nbsp;</font>Home
+                    </a>
+                </li>
+                <li class="About">
+                    <a href="." class="StyledAbout">
+                        <font color="#64FFDA">02.&nbsp;</font>About
+                    </a>
+                </li>
+                <li class="Projects">
+                    <a href="../Projects/" class="StyledProjects">
+                        <font color="#64FFDA">03.&nbsp;</font>Projects
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="StyledAboutTextSection">
+                <span class="Heading"><span>
+                        <font color="#64ffDA" style="font-size: 25px;">02.</font>
+                        <font style="font-family: Lexend;">About Me</font>
+                    </span></span>
+                <br>
+                <font class="StyledTextAbout" color="#8892b0" size="4">
+                    <p style="font-family: Lexend;margin: 0px 0px 15px;">Hi, I'm Satyam. I am a 13 y/o self-taught
+                        fullstack web developer based in India with 3 years of experience. I started my journey of web
+                        developement when I was 10 years old. Back then I made static websites with HTML, CSS and
+                        JavaScript.</p>
+                    <p style="font-family: Lexend;margin: 0px 0px 15px;">I make blazing fast and performant web apps. I
+                        work in frontend web development with JavaScript, TypeScript, and for frontend frameworks like
+                        Svelte, Vue, Angular and React.</p>
+                    <p style="font-family: Lexend;margin: 0px 0px 15px;">I also write backend APIs & scripts, work with
+                        databases, and my favourite platform is NodeJS.</p>
+                    <p style="font-family: Lexend;margin: 0px 0px 15px;">Here are a few technologies I’ve been working
+                        with recently:</p>
+                </font>
+                <div class="StyledSkillsList">
+                    <ul class="skills-list">
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Svelte</li>
+                        <li>Node.js</li>
+                        <li>Vue</li>
+                        <li>Angular</li>
+                        <li>Ghost</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="StyledImageSection">
+                <img src="../icons/favicon.ico" alt="My Profile Pic">
+            </div>
+        </div>
+        <div orientation="left" class="StyledSocialSection">
+            <ul class="SocialLinks">
+                <li><a href="https://github.com/SatyamV7" aria-label="GitHub" target="_blank" rel="noreferrer"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <title>GitHub</title>
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg></a></li>
+                <li><a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-instagram">
+                            <title>Instagram</title>
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a></li>
+                <li><a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noreferrer"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-twitter">
+                            <title>Twitter</title>
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg></a></li>
+                <li><a href="https://www.linkedin.com/in/" aria-label="Linkedin" target="_blank" rel="noreferrer"><svg
+                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <title>LinkedIn</title>
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a></li>
+            </ul>
+        </div>
+        <div orientation="right" class="StyledMailSection">
+            <div class="MailContent"><a href="mailto:satyamverma8772020@gmail.com">satyamverma8772020@gmail.com</a>
+            </div>
+        </div>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('../serviceworker.js').then(function (registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        </script>
+</body>
+
+</html>
