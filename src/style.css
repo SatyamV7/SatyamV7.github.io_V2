@@ -219,6 +219,7 @@ section {
     font-family: Lexend;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
+    color: #ccd6f6;
     white-space: nowrap;
 }
 
