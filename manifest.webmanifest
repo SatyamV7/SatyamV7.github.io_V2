@@ -32,7 +32,7 @@
                     "src": "/src/icons/manifest/icon-192.png"
                 }
             ],
-            "description": ""
+            "description": "Home"
         },
         {
             "name": "About Me",
@@ -42,7 +42,7 @@
                     "src": "/src/icons/manifest/icon-192.png"
                 }
             ],
-            "description": ""
+            "description": "About Me"
         },
         {
             "name": "Projects",
@@ -52,7 +52,7 @@
                     "src": "/src/icons/manifest/icon-192.png"
                 }
             ],
-            "description": ""
+            "description": "Projects"
         }
     ],
     "screenshots": [
