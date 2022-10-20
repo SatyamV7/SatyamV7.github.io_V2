@@ -1,3 +1,4 @@
+/*Global*/
 @import url(./global.css);
 @import url(./fonts/fonts.css);
 
@@ -95,7 +96,7 @@ body::after {
 }
 
 .navbar .menu a {
-    color: rgb(255, 255, 255);
+    color: #ccd6f6;
     text-decoration: none;
     font-size: 17.5px;
     font-weight: 500;
@@ -124,6 +125,8 @@ body::after {
     min-height: -webkit-fill-available;
 }
 
+/*Global end*/
+/*Home*/
 .StyledTextSection {
     width: 40%;
     margin-left: 20%;
@@ -132,11 +135,11 @@ body::after {
 .StyledTextSection .SmallHeading {
     color: #64FFDA;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 15px;
 }
 
-.StyledTextSection .SmallHeading p{
+.StyledTextSection .SmallHeading p {
     font-family: "SF Mono";
 }
 
@@ -166,6 +169,8 @@ body::after {
     transition-delay: 400ms;
 }
 
+/*Home end*/
+/*About*/
 .StyledAboutTextSection {
     width: 30%;
     margin-left: 20%;
@@ -200,6 +205,41 @@ body::after {
     transition-delay: 400ms;
 }
 
+.StyledSkillsList ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    list-style: none;
+    font-weight: 900;
+    color: #8892B0;
+}
+
+.StyledSkillsList ul.skills-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.StyledSkillsList ul.skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #64ffDA;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.StyledImageSection {
+    margin-left: 200px;
+}
+
+/*About end*/
+/*Projects*/
 main.fillHeight {
     padding: 0px 150px;
 }
@@ -878,36 +918,7 @@ a {
     margin-right: 15px;
 }
 
-.StyledSkillsList ul.skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    gap: 0px 10px;
-    padding: 0px;
-    position: relative;
-    top: 50px;
-    overflow: hidden;
-    list-style: none;
-}
-
-.StyledSkillsList ul.skills-list li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    font-size: 13px;
-}
-
-.StyledSkillsList ul.skills-list li::before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    color: #64ffDA;
-    font-size: 12px;
-    line-height: 12px;
-}
-
-.StyledImageSection {
-    margin-left: 200px;
-}
+/*Global*/
 
 .StyledSocialSection {
     width: 40px;
@@ -1031,3 +1042,4 @@ a {
     margin: 0px auto;
     background-color: #a8b2d1;
 }
+/*golbal end*/
