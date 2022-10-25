@@ -31,17 +31,27 @@
             scrollbar-color: #0a192f;
         }
 
+
         ::-webkit-scrollbar {
             width: 5px;
+        }
+
+        ::-webkit-scrollbar:hover {
+            width: 7.5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #495670;
+            border-radius: 5px;
         }
 
         ::-webkit-scrollbar-track {
             background: rgba(0, 0, 0, 0);
         }
 
-        ::-webkit-scrollbar-thumb {
-            background-color: #495670;
-            border-radius: 5px;
+        ::selection {
+            background-color: #233554;
+            color: #ccd6f6;
         }
 
         body {
@@ -52,11 +62,6 @@
             align-items: center;
             width: 100%;
             height: 100%;
-        }
-
-        ::selection {
-            color: #ccd6f6;
-            background: #233554;
         }
 
         body::before,
