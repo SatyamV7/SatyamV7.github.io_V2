@@ -27,10 +27,17 @@
     "shortcuts": [
         {
             "name": "Home",
-            "url": "/",
+            "url": "/#home",
             "icons": [
                 {
-                    "src": "/src/icons/manifest/icon-192.png"
+                    "src": "/src/icons/manifest/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/src/icons/manifest/icon-96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
                 }
             ],
             "description": "Home"
@@ -40,7 +47,14 @@
             "url": "/#about",
             "icons": [
                 {
-                    "src": "/src/icons/manifest/icon-192.png"
+                    "src": "/src/icons/manifest/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/src/icons/manifest/icon-96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
                 }
             ],
             "description": "About Me"
@@ -50,7 +64,14 @@
             "url": "/#projects",
             "icons": [
                 {
-                    "src": "/src/icons/manifest/icon-192.png"
+                    "src": "/src/icons/manifest/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/src/icons/manifest/icon-96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
                 }
             ],
             "description": "Projects"
