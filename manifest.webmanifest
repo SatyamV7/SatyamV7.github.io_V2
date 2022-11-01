@@ -30,12 +30,12 @@
             "url": "/#home",
             "icons": [
                 {
-                    "src": "/src/icons/manifest/icon-192.png",
+                    "src": "/assets/icons/manifest/icon-192.png",
                     "sizes": "192x192",
                     "type": "image/png"
                 },
                 {
-                    "src": "/src/icons/manifest/icon-96.png",
+                    "src": "/assets/icons/manifest/icon-96.png",
                     "sizes": "96x96",
                     "type": "image/png"
                 }
@@ -47,12 +47,12 @@
             "url": "/#about",
             "icons": [
                 {
-                    "src": "/src/icons/manifest/icon-192.png",
+                    "src": "/assets/icons/manifest/icon-192.png",
                     "sizes": "192x192",
                     "type": "image/png"
                 },
                 {
-                    "src": "/src/icons/manifest/icon-96.png",
+                    "src": "/assets/icons/manifest/icon-96.png",
                     "sizes": "96x96",
                     "type": "image/png"
                 }
@@ -64,12 +64,12 @@
             "url": "/#projects",
             "icons": [
                 {
-                    "src": "/src/icons/manifest/icon-192.png",
+                    "src": "/assets/icons/manifest/icon-192.png",
                     "sizes": "192x192",
                     "type": "image/png"
                 },
                 {
-                    "src": "/src/icons/manifest/icon-96.png",
+                    "src": "/assets/icons/manifest/icon-96.png",
                     "sizes": "96x96",
                     "type": "image/png"
                 }
@@ -79,85 +79,85 @@
     ],
     "screenshots": [
         {
-            "src": "/src/images/screenshot-1.png",
+            "src": "/assets/images/screenshot-1.png",
             "sizes": "1280x800",
             "type": "image/png"
         },
         {
-            "src": "/src/images/screenshot-2.png",
+            "src": "/assets/images/screenshot-2.png",
             "sizes": "800x1280",
             "type": "image/png"
         }
     ],
     "icons": [
         {
-            "src": "/src/icons/manifest/icon-32.png",
+            "src": "/assets/icons/manifest/icon-32.png",
             "sizes": "32x32",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-48.png",
+            "src": "/assets/icons/manifest/icon-48.png",
             "sizes": "48x48",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-64.png",
+            "src": "/assets/icons/manifest/icon-64.png",
             "sizes": "64x64",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-96.png",
+            "src": "/assets/icons/manifest/icon-96.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-128.png",
+            "src": "/assets/icons/manifest/icon-128.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-192.png",
+            "src": "/assets/icons/manifest/icon-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-256.png",
+            "src": "/assets/icons/manifest/icon-256.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/manifest/icon-512.png",
+            "src": "/assets/icons/manifest/icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/src/icons/maskable/maskable_icon_x512.png",
+            "src": "/assets/icons/maskable/maskable_icon_x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/src/icons/maskable/maskable_icon_x128.png",
+            "src": "/assets/icons/maskable/maskable_icon_x128.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/src/icons/maskable/maskable_icon_x96.png",
+            "src": "/assets/icons/maskable/maskable_icon_x96.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/src/icons/maskable/maskable_icon_x48.png",
+            "src": "/assets/icons/maskable/maskable_icon_x48.png",
             "sizes": "48x48",
             "type": "image/png",
             "purpose": "maskable"

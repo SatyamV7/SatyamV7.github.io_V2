@@ -4,19 +4,19 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'Static_Cache v4';
-const RUNTIME = 'Dynamic_Cache v4';
+const PRECACHE = 'Static_Cache v5';
+const RUNTIME = 'Dynamic_Cache v5';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
     '/',
     'index.html',
+    '/src/fonts.css',
     '/src/style.css',
     '/src/global.css',
-    '/src/fonts/fonts.css',
-    '/src/icons/favicon.ico',
-    '/src/fonts/SFMono-Regular.ttf',
-    '/src/fonts/Lexend-Regular.ttf',
+    '/assets/icons/favicon.ico',
+    '/assets/fonts/SFMono-Regular.ttf',
+    '/assets/fonts/Lexend-Regular.ttf',
 ];
 
 // The install handler takes care of precaching the resources we always need.
