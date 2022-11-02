@@ -21,13 +21,13 @@ html {
     width: 5px;
 }
 
-::-webkit-scrollbar:hover {
-    width: 7.5px;
+::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF00;
+    border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:hover {
     background-color: #495670;
-    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
