@@ -1,13 +1,12 @@
 /*Global*/
-@import url(./global.css);
-@import url(./fonts.css);
+@import url(/src/fonts.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "SF Mono";
-    /*cursor: url(../src/icons/mouse_cursor.cur), auto !important;*/
+    /*cursor: url(../src/icons/mouse_cursor0.png), auto !important;*/
 }
 
 html {
@@ -262,7 +261,7 @@ section {
     margin: 10px 0px 40px;
     font-family: Lexend;
     width: 100%;
-    font-size: clamp(26px, 5vw, var(--fz-heading));
+    font-size: 25px;
     color: #ccd6f6;
     white-space: nowrap;
 }
@@ -275,7 +274,7 @@ section {
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: var(--lightest-navy);
+    background-color: #233554;
 }
 
 img,
@@ -303,12 +302,12 @@ a {
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    transition: var(--transition);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 a:hover,
 a:focus {
-    color: var(--green);
+    color: #64ffda;
 }
 
 a.inline-link {
@@ -316,14 +315,14 @@ a.inline-link {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: var(--transition);
-    color: var(--green);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda;
 }
 
 a.inline-link:hover,
 a.inline-link:focus,
 a.inline-link:active {
-    color: var(--green);
+    color: #64ffda;
     outline: 0px;
 }
 
@@ -336,8 +335,8 @@ a.inline-link:active::after {
 a.inline-link:hover>*,
 a.inline-link:focus>*,
 a.inline-link:active>* {
-    transition: var(--transition);
-    color: var(--green) !important;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda !important;
 }
 
 a.inline-link::after {
@@ -347,8 +346,8 @@ a.inline-link::after {
     height: 1px;
     position: relative;
     bottom: 0.37em;
-    background-color: var(--green);
-    transition: var(--transition);
+    background-color: #64ffda;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
@@ -367,14 +366,14 @@ p>a {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: var(--transition);
-    color: var(--green);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda;
 }
 
 p>a:hover,
 p>a:focus,
 p>a:active {
-    color: var(--green);
+    color: #64ffda;
     outline: 0px;
 }
 
@@ -387,8 +386,8 @@ p>a:active::after {
 p>a:hover>*,
 p>a:focus>*,
 p>a:active>* {
-    transition: var(--transition);
-    color: var(--green) !important;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda !important;
 }
 
 .StyledProjectsGrid {
@@ -533,14 +532,14 @@ p>a:active>* {
 
 .StyledProject .project-overline {
     margin: 10px 0px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
+    color: #64ffda;
+    font-family: "SF Mono";
+    font-size: 13px;
     font-weight: 400;
 }
 
 .StyledProject .project-title {
-    color: var(--lightest-slate);
+    color: #ccd6f6;
     font-size: clamp(24px, 5vw, 28px);
 }
 
@@ -552,7 +551,7 @@ p>a:active>* {
 
 @media (max-width: 768px) {
     .StyledProject .project-title {
-        color: var(--white);
+        color: #e6f1ff;
     }
 
     .StyledProject .project-title a {
@@ -572,20 +571,20 @@ p>a:active>* {
 }
 
 .StyledProject .project-description {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     position: relative;
     z-index: 2;
     padding: 25px;
-    border-radius: var(--border-radius);
-    background-color: var(--light-navy);
-    color: var(--light-slate);
-    font-size: var(--fz-lg);
+    border-radius: 4px;
+    background-color: #112240;
+    color: #a8b2d1;
+    font-size: 18px;
 }
 
 .StyledProject .project-description:hover,
 .StyledProject .project-description:focus {
-    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
 @media (max-width: 768px) {
@@ -605,14 +604,14 @@ p>a:active>* {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: var(--transition);
-    color: var(--green);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda;
 }
 
 .StyledProject .project-description a:hover,
 .StyledProject .project-description a:focus,
 .StyledProject .project-description a:active {
-    color: var(--green);
+    color: #64ffda;
     outline: 0px;
 }
 
@@ -625,8 +624,8 @@ p>a:active>* {
 .StyledProject .project-description a:hover>*,
 .StyledProject .project-description a:focus>*,
 .StyledProject .project-description a:active>* {
-    transition: var(--transition);
-    color: var(--green) !important;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda !important;
 }
 
 .StyledProject .project-description a::after {
@@ -636,13 +635,13 @@ p>a:active>* {
     height: 1px;
     position: relative;
     bottom: 0.37em;
-    background-color: var(--green);
-    transition: var(--transition);
+    background-color: #64ffda;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
 .StyledProject .project-description strong {
-    color: var(--white);
+    color: #e6f1ff;
     font-weight: normal;
 }
 
@@ -658,9 +657,9 @@ p>a:active>* {
 
 .StyledProject .project-tech-list li {
     margin: 0px 20px 5px 0px;
-    color: var(--light-slate);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
+    color: #a8b2d1;
+    font-family: "SF Mono";
+    font-size: 13px;
     white-space: nowrap;
 }
 
@@ -671,7 +670,7 @@ p>a:active>* {
 
     .StyledProject .project-tech-list li {
         margin: 0px 10px 5px 0px;
-        color: var(--lightest-slate);
+        color: #ccd6f6;
     }
 }
 
@@ -682,7 +681,7 @@ p>a:active>* {
     position: relative;
     margin-top: 10px;
     margin-left: -10px;
-    color: var(--lightest-slate);
+    color: #ccd6f6;
 }
 
 .StyledProject .project-links a {
@@ -706,24 +705,24 @@ p>a:active>* {
 }
 
 .StyledProject .project-links .cta {
-    color: var(--green);
+    color: #64ffda;
     background-color: transparent;
-    border: 1px solid var(--green);
-    border-radius: var(--border-radius);
+    border: 1px solid #64ffda;
+    border-radius: 4px;
     padding: 0.75rem 1rem;
-    font-size: var(--fz-xs);
-    font-family: var(--font-mono);
+    font-size: 13px;
+    font-family: "SF Mono";
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     margin: 10px;
 }
 
 .StyledProject .project-links .cta:hover,
 .StyledProject .project-links .cta:focus,
 .StyledProject .project-links .cta:active {
-    background-color: var(--green-tint);
+    background-color: rgba(100, 255, 218, 0.1);
     outline: none;
 }
 
@@ -732,8 +731,8 @@ p>a:active>* {
 }
 
 .StyledProject .project-image {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     grid-area: 1 / 6 / -1 / -1;
     position: relative;
     z-index: 1;
@@ -741,7 +740,7 @@ p>a:active>* {
 
 .StyledProject .project-image:hover,
 .StyledProject .project-image:focus {
-    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
 @media (max-width: 768px) {
@@ -755,8 +754,8 @@ p>a:active>* {
 .StyledProject .project-image a {
     width: 100%;
     height: 100%;
-    background-color: var(--green);
-    border-radius: var(--border-radius);
+    background-color: #64ffda;
+    border-radius: 4px;
     vertical-align: middle;
 }
 
@@ -781,13 +780,13 @@ p>a:active>* {
     height: 100%;
     inset: 0px;
     z-index: 3;
-    transition: var(--transition);
-    background-color: var(--navy);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: #0a192f;
     mix-blend-mode: screen;
 }
 
 .StyledProject .project-image .img {
-    border-radius: var(--border-radius);
+    border-radius: 4px;
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1) brightness(90%);
 }
@@ -811,7 +810,7 @@ a {
     -webkit-box-align: center;
     align-items: center;
     margin-right: -10px;
-    color: var(--light-slate);
+    color: #a8b2d1;
 }
 
 .project-links a {
@@ -836,8 +835,8 @@ a {
 
 .project-title {
     margin: 0px 0px 10px;
-    color: var(--lightest-slate);
-    font-size: var(--fz-xxl);
+    color: #ccd6f6;
+    font-size: 22px;
 }
 
 .project-title a {
@@ -856,7 +855,7 @@ a {
 }
 
 .project-description {
-    color: var(--light-slate);
+    color: #a8b2d1;
     font-size: 17px;
 }
 
@@ -865,14 +864,14 @@ a {
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: var(--transition);
-    color: var(--green);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda;
 }
 
 .project-description a:hover,
 .project-description a:focus,
 .project-description a:active {
-    color: var(--green);
+    color: #64ffda;
     outline: 0px;
 }
 
@@ -885,8 +884,8 @@ a {
 .project-description a:hover>*,
 .project-description a:focus>*,
 .project-description a:active>* {
-    transition: var(--transition);
-    color: var(--green) !important;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: #64ffda !important;
 }
 
 .project-description a::after {
@@ -896,8 +895,8 @@ a {
     height: 1px;
     position: relative;
     bottom: 0.37em;
-    background-color: var(--green);
-    transition: var(--transition);
+    background-color: #64ffda;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
@@ -913,8 +912,8 @@ a {
 }
 
 .project-tech-list li {
-    font-family: var(--font-mono);
-    font-size: var(--fz-xxs);
+    font-family: "SF Mono";
+    font-size: 12px;
     line-height: 1.75;
 }
 
