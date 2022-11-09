@@ -24,8 +24,8 @@ self.addEventListener('install', event => {
     console.log('service worker has been installed');
     event.waitUntil(
         caches.open(PRECACHE)
-        .then(cache => cache.addAll(PRECACHE_URLS))
-        .then(self.skipWaiting())
+            .then(cache => cache.addAll(PRECACHE_URLS))
+            .then(self.skipWaiting())
     );
 });
 
