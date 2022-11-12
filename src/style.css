@@ -35,8 +35,6 @@ html {
 
 body {
     background: #0a192f;
-    animation: gradient 15s ease infinite;
-    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
