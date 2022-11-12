@@ -24,7 +24,7 @@ html {
 ::-webkit-scrollbar-thumb {
     border: 6px solid transparent;
     display: block;
-    background: #787878;
+    background: #495670;
     border-radius: 10px;
     background-clip: padding-box;
 }
