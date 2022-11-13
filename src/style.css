@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "SF Mono";
-    /*cursor: url(../src/icons/mouse_cursor0.png), auto !important;*/
+    cursor: url(/assets/cursor/mouse_cursor.png), auto !important;
 }
 
 html {
