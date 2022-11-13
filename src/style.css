@@ -20,6 +20,7 @@ html {
     display: block;
     background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
     display: block;
     background: #495670;
@@ -573,6 +574,10 @@ p>a:active>* {
     background-color: #112240;
     color: #a8b2d1;
     font-size: 18px;
+}
+
+.StyledProject .project-description {
+    text-align: justify;
 }
 
 .StyledProject .project-description:hover,
