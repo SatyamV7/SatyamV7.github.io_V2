@@ -16,18 +16,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 17px;
+    width: 16px;
     display: block;
     background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
+    border: 6px solid transparent;
     display: block;
     background: #495670;
+    border-radius: 10px;
     background-clip: padding-box;
-    border-width: 20px 7px 20px 7px;
-    border-style: solid;
-    border-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
@@ -85,11 +84,11 @@ body::after {
 }
 
 .navbar .menu .Projects {
-    margin: 0px !important;
+    margin-right: 0px !important;
 }
 
 .navbar .menu .Home {
-    margin: 0px !important;
+    margin-left: 0px !important;
 }
 
 .navbar .menu a {
@@ -103,7 +102,7 @@ body::after {
 .navbar .menu a .NavNum {
     color: #64FFDA;
     font-size: 17.7px;
-    margin: 4px;
+    margin-right: 4px;
 }
 
 .navbar .menu a:hover {
@@ -126,7 +125,7 @@ body::after {
 /*Home*/
 .StyledTextSection {
     width: 40%;
-    margin: 20%;
+    margin-left: 20%;
 }
 
 .StyledTextSection .SmallHeading {
@@ -170,7 +169,7 @@ body::after {
 /*About*/
 .StyledAboutTextSection {
     width: 30%;
-    margin: 20%;
+    margin-left: 20%;
 }
 
 .StyledAboutTextSection .Heading {
@@ -217,8 +216,8 @@ body::after {
 
 .StyledSkillsList ul.skills-list li {
     position: relative;
-    margin: 10px;
-    padding: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
     font-size: 13px;
 }
 
@@ -232,7 +231,7 @@ body::after {
 }
 
 .StyledImageSection {
-    margin: 200px;
+    margin-left: 200px;
 }
 
 /*About end*/
@@ -267,7 +266,7 @@ section {
     top: -50%;
     width: 300px;
     height: 1px;
-    margin: 20px;
+    margin-left: 20px;
     background-color: #233554;
 }
 
@@ -406,18 +405,18 @@ p>a:active>* {
 }
 
 .StyledProject:not(:last-of-type) {
-    margin: 100px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
     .StyledProject:not(:last-of-type) {
-        margin: 70px;
+        margin-bottom: 70px;
     }
 }
 
 @media (max-width: 480px) {
     .StyledProject:not(:last-of-type) {
-        margin: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -471,16 +470,16 @@ p>a:active>* {
 .StyledProject:nth-of-type(2n+1) .project-links {
     -webkit-box-pack: end;
     justify-content: flex-end;
-    margin: 0px;
-    margin: -10px;
+    margin-left: 0px;
+    margin-right: -10px;
 }
 
 @media (max-width: 768px) {
     .StyledProject:nth-of-type(2n+1) .project-links {
         -webkit-box-pack: start;
         justify-content: flex-start;
-        margin: -10px;
-        margin: 0px;
+        margin-left: -10px;
+        margin-right: 0px;
     }
 }
 
@@ -674,7 +673,7 @@ p>a:active>* {
     align-items: center;
     position: relative;
     margin-top: 10px;
-    margin: -10px;
+    margin-left: -10px;
     color: #ccd6f6;
 }
 
@@ -803,7 +802,7 @@ a {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    margin: -10px;
+    margin-right: -10px;
     color: #a8b2d1;
 }
 
@@ -912,7 +911,7 @@ a {
 }
 
 .project-tech-list li:not(:last-of-type) {
-    margin: 15px;
+    margin-right: 15px;
 }
 
 /*Global*/
@@ -938,7 +937,7 @@ a {
 }
 
 .SocialLinks li {
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .SocialLinks li a {
