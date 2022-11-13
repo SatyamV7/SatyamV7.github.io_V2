@@ -16,17 +16,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 16px;
+    width: 17px;
     display: block;
     background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
-    border: 6px solid transparent;
     display: block;
     background: #495670;
-    border-radius: 10px;
     background-clip: padding-box;
+    border-width: 20px 7px 20px 7px;
+    border-style: solid;
+    border-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
