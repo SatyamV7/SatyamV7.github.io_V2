@@ -353,6 +353,7 @@ a.inline-link::after {
 p {
     margin: 0px 0px 15px;
     font-family: Lexend;
+    text-align: justify;
 }
 
 p:last-child,
