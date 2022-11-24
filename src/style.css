@@ -13,6 +13,7 @@ html {
     width: 100%;
     height: 100%;
     overflow: overlay;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
