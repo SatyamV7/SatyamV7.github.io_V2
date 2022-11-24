@@ -354,7 +354,6 @@ a.inline-link::after {
 p {
     margin: 0px 0px 15px;
     font-family: Lexend;
-    text-align: justify;
 }
 
 p:last-child,
@@ -583,7 +582,7 @@ p>a:active>* {
     font-size: 18px;
 }
 
-.StyledProject .project-description {
+.StyledProject .project-description p {
     text-align: justify;
 }
 
