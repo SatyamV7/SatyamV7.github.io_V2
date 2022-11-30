@@ -697,6 +697,10 @@ p>a:active>* {
     padding: 10px;
 }
 
+.StyledProject .project-links a:hover {
+    transform: translateY(-3px);
+}
+
 .StyledProject .project-links a.external svg {
     width: 22px;
     height: 22px;
