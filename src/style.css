@@ -124,8 +124,8 @@ body::after {
     align-items: center;
     position: absolute;
     color: rgb(255, 255, 255);
-    width: -webkit-fill-available;
-    min-height: -webkit-fill-available;
+    width: 100%;
+    min-height: 100%;
 }
 
 /*Global end*/
