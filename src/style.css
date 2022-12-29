@@ -104,6 +104,7 @@ body::after {
     font-size: 17.5px;
     font-weight: 500;
     transition: all 0.3s ease;
+    text-shadow: 0 0 1vw currentColor;
 }
 
 .navbar .menu a .NavNum {
@@ -196,7 +197,8 @@ body::after {
     position: relative;
     top: -16px;
     left: 236.08px;
-    width: 339.92px;
+    right: 0px;
+    width: 40%;
     height: 1px;
     background-color: #233554;
 }
@@ -253,27 +255,27 @@ section {
     max-width: 1000px;
 }
 
-.heading {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
+.Heading {
     position: relative;
     margin: 10px 0px 40px;
-    font-family: Lexend;
-    width: 100%;
-    font-size: 32px;
     color: #ccd6f6;
-    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Lexend;
+    transition-delay: 200ms;
+    text-shadow: 0 0 1vw currentColor;
+    margin-top: 15px;
 }
 
-.heading::after {
+.Heading::after {
     content: "";
     display: block;
     position: relative;
-    top: -50%;
-    width: 300px;
+    top: -16px;
+    left: 415px;
+    right: 0px;
+    width: 40%;
     height: 1px;
-    margin-left: 20px;
     background-color: #233554;
 }
 
@@ -398,6 +400,7 @@ p>a:active>* {
 
 .StyledProjectsGrid a {
     font-family: Lexend;
+    text-shadow: 0 0 1vw currentColor;
     position: relative;
     z-index: 1;
 }
