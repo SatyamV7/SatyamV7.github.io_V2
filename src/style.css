@@ -205,9 +205,22 @@ body::after {
 
 .StyledAboutTextSection .StyledTextAbout {
     top: 20px;
+    color: #8892b0;
     position: relative;
+    font-size: 18px;
     font-family: Lexend;
     transition-delay: 400ms;
+}
+
+.StyledAboutTextSection .StyledTextAbout p {
+    font-family: Lexend;
+    margin: 0px 0px 15px;
+    text-align: justify;
+}
+
+.StyledAboutTextSection .StyledTextAbout p span#age,
+.StyledAboutTextSection .StyledTextAbout p span#exp {
+    font-family: Lexend;
 }
 
 .StyledSkillsList ul.skills-list {
