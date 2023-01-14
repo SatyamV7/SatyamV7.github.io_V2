@@ -23,4 +23,3 @@ let calculatedExp = calculatedAge - year_exp
 _myExp.innerText = calculatedExp;
 
 _myAge.innerText = calculatedAge;
-
