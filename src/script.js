@@ -13,7 +13,7 @@ function getAge(birthYear) {
     age = currentYear - birthYear;
     return age;
 }
-setTimeout(getAge(), 1000)
+setTimeout(getAge, 1000)
 let calculatedAge = getAge(year_born);
 
 // To calculate Experience:
