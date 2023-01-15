@@ -3,23 +3,17 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 var _myAge = document.getElementById('age')
 var _myExp = document.getElementById('exp')
 
-// To calculate age:
-var year_born = 2009;
-var d = new Date();
-var n = d.getFullYear();
-function getAge(birthYear) {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    age = currentYear - birthYear;
-    return age;
+// To calculate information like age and experience:
+function getInfo() {
+    var expYear= 11;
+    var birthYear = 2009;
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const myAge = currentYear - birthYear;
+    const myExp = myAge - expYear
+    _myAge.innerHTML = myAge;
+    _myExp.innerText = myExp;
+    setTimeout(getInfo, 1);
 }
-setTimeout(getAge, 1000)
-let calculatedAge = getAge(year_born);
 
-// To calculate Experience:
-var year_exp = 11
-let calculatedExp = calculatedAge - year_exp
-
-_myExp.innerText = calculatedExp;
-
-_myAge.innerText = calculatedAge;
+getInfo();
