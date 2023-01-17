@@ -11,7 +11,7 @@ function getInfo() {
     const currentYear = currentDate.getFullYear();
     const myAge = currentYear - birthYear;
     const myExp = myAge - expYear
-    _myAge.innerHTML = myAge;
+    _myAge.innerText = myAge;
     _myExp.innerText = myExp;
     setTimeout(getInfo, 1);
 }
