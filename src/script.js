@@ -1,12 +1,13 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
+const _myAge = document.getElementById('age')
+const _myExp = document.getElementById('exp')
 
-var _myAge = document.getElementById('age')
-var _myExp = document.getElementById('exp')
+
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 // To calculate information like age and experience:
 function getInfo() {
-    var expYear= 11;
-    var birthYear = 2009;
+    const expYear = 11;
+    const birthYear = 2009;
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const myAge = currentYear - birthYear;
