@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#0a192f">
 </head>
 
-<body>
+<body onload="onClickStyledMain()">
     <div id="root">
         <nav class="navbar">
             <div class="logo">
@@ -24,17 +24,17 @@
             </div>
             <ul class="menu">
                 <li class="Home">
-                    <a href="#home" class="StyledMain">
+                    <a onClick="onClickStyledMain()" class="StyledMain">
                         <font color="#64FFDA">01.&nbsp;</font>Home
                     </a>
                 </li>
                 <li class="About">
-                    <a href="#about" class="StyledAbout">
+                    <a onClick="onClickStyledAbout()" class="StyledAbout">
                         <font color="#64FFDA">02.&nbsp;</font>About
                     </a>
                 </li>
                 <li class="Projects">
-                    <a href="#projects" class="StyledProjects">
+                    <a onClick="onClickStyledProjects()" class="StyledProjects">
                         <font color="#64FFDA">03.&nbsp;</font>Projects
                     </a>
                 </li>
@@ -57,7 +57,7 @@
                 </font>
             </div>
         </div>
-        <div class="content" id="about" style="position: relative;top: 75%">
+        <div class="content" id="about">
             <div class="StyledAboutTextSection">
                 <span class="Heading"><span>
                         <font color="#64ffDA" style="font-size: 25px;">02.</font>
@@ -101,8 +101,8 @@
                 <img src="/assets/icons/favicon.ico" alt="My Profile Pic">
             </div>
         </div>
-        <div class="content" id="projects" style="position: relative;top: 75%">
-            <section id="projects">
+        <div class="content" id="projects">
+            <section>
                 <span class="Heading">
                     <font color="#64ffDA" style="font-size: 25px;">03.</font>
                     <span style="font-family: Lexend;">Some Things I’ve Built</span>

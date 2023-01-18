@@ -129,6 +129,15 @@ body::after {
     min-height: 100%;
 }
 
+.detectDevTools {
+    color: #8892b0;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left : 10%;
+    right: 10%;
+}
+
 /*Global end*/
 /*Home*/
 .StyledTextSection {
