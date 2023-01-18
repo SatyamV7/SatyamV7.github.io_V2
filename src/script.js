@@ -8,6 +8,11 @@ const _projects = document.getElementById('projects')
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+setTimeout(function () {
+    document.querySelector("#splash-screen").style.display = "none";
+    document.querySelector("#root").style.display = "block";
+}, 3000);
+
 function onClickStyledMain() {
     _home.style.display = 'flex';
     _about.style.display = 'none';

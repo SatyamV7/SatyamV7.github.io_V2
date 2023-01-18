@@ -26,8 +26,8 @@
     ],
     "shortcuts": [
         {
-            "name": "Home",
-            "url": "/#home",
+            "name": "SatyamV7",
+            "url": "/",
             "icons": [
                 {
                     "src": "/assets/icons/manifest/icon-192.png",
@@ -41,40 +41,6 @@
                 }
             ],
             "description": "Home"
-        },
-        {
-            "name": "About Me",
-            "url": "/#about",
-            "icons": [
-                {
-                    "src": "/assets/icons/manifest/icon-192.png",
-                    "sizes": "192x192",
-                    "type": "image/png"
-                },
-                {
-                    "src": "/assets/icons/manifest/icon-96.png",
-                    "sizes": "96x96",
-                    "type": "image/png"
-                }
-            ],
-            "description": "About Me"
-        },
-        {
-            "name": "Projects",
-            "url": "/#projects",
-            "icons": [
-                {
-                    "src": "/assets/icons/manifest/icon-192.png",
-                    "sizes": "192x192",
-                    "type": "image/png"
-                },
-                {
-                    "src": "/assets/icons/manifest/icon-96.png",
-                    "sizes": "96x96",
-                    "type": "image/png"
-                }
-            ],
-            "description": "Projects"
         }
     ],
     "screenshots": [
