@@ -65,7 +65,7 @@ body::after {
 .loader {
     display: block;
     position: relative;
-    height: 12px;
+    height: 7.5px;
     width: 100%;
     background: #ffffff50;
     border-radius: 10px;
