@@ -46,7 +46,7 @@ function getInfo() {
 
 getInfo();
 
-/*!function () {
+!function () {
     function detectDevTools(allow) {
         if (isNaN(+allow)) allow = 100;
         var start = +new Date();
@@ -146,4 +146,4 @@ getInfo();
         window.addEventListener('focus', detectDevTools);
         window.addEventListener('blur', detectDevTools);
     }
-}();*/
+}();
