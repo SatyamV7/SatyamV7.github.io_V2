@@ -113,6 +113,14 @@ body::after {
     align-items: center;
 }
 
+.navbar .logo {
+    border-radius: 50%;
+}
+
+.navbar .logo:hover {
+    box-shadow: 0 0 1.25vw #64ffda;
+}
+
 .navbar .menu {
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +146,23 @@ body::after {
     font-weight: 500;
     transition: all 0.3s ease;
     text-shadow: 0 0 1vw currentColor;
+}
+
+.navbar .menu a:hover::after,
+.navbar .menu a:focus::after,
+.navbar .menu a:active::after {
+    width: 100%;
+}
+
+.navbar .menu a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1.9px;
+    position: relative;
+    background-color: #64FFDA;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0.5;
 }
 
 .navbar .menu a .NavNum {
