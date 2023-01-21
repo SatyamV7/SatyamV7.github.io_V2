@@ -15,8 +15,8 @@ const PRECACHE_URLS = [
     '/src/style.css',
     '/src/script.js',
     '/assets/icons/favicon.ico',
-    '/assets/fonts/SFMono-Regular.ttf',
-    '/assets/fonts/Lexend-Regular.ttf',
+    'assets/fonts/JetBrainsMono-Regular.woff2',
+    '/assets/fonts/Lexend-Regular.woff2',
 ];
 
 // The install handler takes care of precaching the resources we always need.
