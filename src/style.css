@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF Mono";
+    font-family: "JetBrains Mono";
     cursor: url(/assets/cursor/mouse_cursor.png), auto !important;
 }
 
@@ -211,7 +211,7 @@ body::after {
 }
 
 .StyledTextSection .SmallHeading p {
-    font-family: "SF Mono";
+    font-family: "JetBrains Mono";
 }
 
 .StyledTextSection .BigHeading {
@@ -616,7 +616,7 @@ p>a:active>* {
 .StyledProject .project-overline {
     margin: 10px 0px;
     color: #64ffda;
-    font-family: "SF Mono";
+    font-family: "JetBrains Mono";
     font-size: 13px;
     font-weight: 400;
 }
@@ -745,7 +745,7 @@ p>a:active>* {
 .StyledProject .project-tech-list li {
     margin: 0px 20px 5px 0px;
     color: #a8b2d1;
-    font-family: "SF Mono";
+    font-family: "JetBrains Mono";
     font-size: 13px;
     white-space: nowrap;
 }
@@ -802,7 +802,7 @@ p>a:active>* {
     border-radius: 4px;
     padding: 0.75rem 1rem;
     font-size: 13px;
-    font-family: "SF Mono";
+    font-family: "JetBrains Mono";
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
@@ -1003,7 +1003,7 @@ a {
 }
 
 .project-tech-list li {
-    font-family: "SF Mono";
+    font-family: "JetBrains Mono";
     font-size: 12px;
     line-height: 1.75;
 }

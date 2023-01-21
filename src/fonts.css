@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Lexend";
-    src: url(/assets/fonts/Lexend-Regular.ttf);
+    src: url(/assets/fonts/Lexend-Regular.woff2);
 }
 
 @font-face {
-    font-family: "SF Mono";
-    src: url(/assets/fonts/SFMono-Regular.ttf);
+    font-family: "JetBrains Mono";
+    src: url(/assets/fonts/JetBrainsMono-Regular.woff2);
 }
