@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "scripts": {
         "test": "serve",
+        "build": "serve .",
         "deploy": "firebase deploy"
         
     },
