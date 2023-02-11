@@ -1,11 +1,16 @@
 {
   "hosting": {
-    "site": "satyamv7-is-a-dev",
     "public": "/",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }

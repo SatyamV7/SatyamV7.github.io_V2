@@ -1,5 +1,27 @@
 {
-  "dependencies": {
-    "firebase": "^9.15.0"
-  }
+    "name": "satyamv7.github.io_v2",
+    "description": "",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "serve",
+        "deploy": "firebase deploy"
+        
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SatyamV7/SatyamV7.github.io_V2.git"
+    },
+    "keywords": [
+        "SatyamV7"
+    ],
+    "author": "Satyam Verma",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SatyamV7/SatyamV7.github.io_V2/issues"
+    },
+    "homepage": "https://satyamverma.netlify.app/",
+    "dependencies": {
+        "firebase": "^9.15.0",
+        "serve": "^14.2.0"
+    }
 }
