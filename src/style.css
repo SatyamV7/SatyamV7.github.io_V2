@@ -62,6 +62,16 @@ body::after {
     display: block;
 }
 
+.loaderImg {
+    margin-bottom: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 2.5vw #64ffda;
+}
+
+.loaderImg img {
+    border-radius: 0px;
+}
+
 .loader {
     display: block;
     position: relative;
