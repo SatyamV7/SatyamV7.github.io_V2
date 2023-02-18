@@ -1,4 +1,5 @@
 const _root = document.getElementById('root')
+const _main = document.getElementById('main')
 const _myAge = document.getElementById('age')
 const _myExp = document.getElementById('exp')
 const _home = document.getElementById('home')
@@ -10,7 +11,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 setTimeout(function () {
     document.querySelector("#splash-screen").style.display = "none";
-    document.querySelector("#root").style.display = "block";
+    document.querySelector("#main").style.display = "block";
 }, 3000);
 
 function onClickStyledMain() {
@@ -57,7 +58,7 @@ getInfo();
             _home.remove();
             _about.remove();
             _projects.remove();
-            _root.innerHTML = `
+            _main.innerHTML = `
             <nav class="navbar">
                 <div class="logo">
                     <a href="/"><img src="/assets/icons/favicon.ico" width="50" height="50" alt="logo"></a>

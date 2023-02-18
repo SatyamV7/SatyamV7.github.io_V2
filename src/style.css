@@ -101,7 +101,20 @@ body::after {
 }
 
 #root {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    z-index: 12;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+}
+
+#main {
+    height: 100%;
     width: 100%;
     background: transparent;
     z-index: 12;
@@ -111,7 +124,7 @@ body::after {
     display: none;
 }
 
-#root .navbar {
+#main .navbar {
     margin: auto;
     width: 100%;
     position: relative;
@@ -189,7 +202,7 @@ body::after {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#root .content {
+#main .content {
     top: 0px;
     padding: 0px;
     display: flex;
