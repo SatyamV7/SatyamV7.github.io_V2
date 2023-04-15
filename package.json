@@ -5,7 +5,6 @@
     "scripts": {
         "test": "serve",
         "deploy": "firebase deploy"
-        
     },
     "repository": {
         "type": "git",
