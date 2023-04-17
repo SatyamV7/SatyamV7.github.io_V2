@@ -10,8 +10,8 @@ const _projects = document.getElementById('projects')
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 setTimeout(function () {
-    document.querySelector("#splash-screen").style.display = "none";
-    document.querySelector("#main").style.display = "block";
+    document.querySelector('#splash-screen').style.display = 'none';
+    document.querySelector('#main').style.display = 'block';
 }, 3000);
 
 function onClickStyledMain() {
@@ -47,6 +47,7 @@ function getInfo() {
 
 getInfo();
 
+/*
 !function () {
     function detectDevTools(allow) {
         if (isNaN(+allow)) allow = 100;
@@ -131,7 +132,7 @@ getInfo();
         }
     }
     if (window.attachEvent) {
-        if (document.readyState === "complete" || document.readyState === "interactive") {
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
             detectDevTools();
             window.attachEvent('onresize', detectDevTools);
             window.attachEvent('onmousemove', detectDevTools);
@@ -147,4 +148,4 @@ getInfo();
         window.addEventListener('focus', detectDevTools);
         window.addEventListener('blur', detectDevTools);
     }
-}();
+}();*/

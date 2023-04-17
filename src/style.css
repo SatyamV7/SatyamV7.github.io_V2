@@ -127,8 +127,12 @@ body::after {
 #main .navbar {
     margin: auto;
     width: 100%;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: rgba(10, 25, 47, 0.85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 999;
     padding: 35px 50px;
     border-radius: 25px;
     display: flex;
