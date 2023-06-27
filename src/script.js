@@ -18,18 +18,27 @@ function onClickStyledMain() {
     _home.style.display = 'flex';
     _about.style.display = 'none';
     _projects.style.display = 'none';
+    document.querySelector('.StyledMain').style.color = '#64FFDA';
+    document.querySelector('.StyledAbout').style.color = '#CCD6F6';
+    document.querySelector('.StyledProjects').style.color = '#CCD6F6';
 }
 
 function onClickStyledAbout() {
     _home.style.display = 'none';
     _about.style.display = 'flex';
     _projects.style.display = 'none';
+    document.querySelector('.StyledMain').style.color = '#CCD6F6';
+    document.querySelector('.StyledAbout').style.color = '#64FFDA';
+    document.querySelector('.StyledProjects').style.color = '#CCD6F6';
 }
 
 function onClickStyledProjects() {
     _home.style.display = 'none';
     _about.style.display = 'none';
     _projects.style.display = 'flex';
+    document.querySelector('.StyledMain').style.color = '#CCD6F6';
+    document.querySelector('.StyledAbout').style.color = '#CCD6F6';
+    document.querySelector('.StyledProjects').style.color = '#64FFDA';
 }
 
 // To calculate information like age and experience:
@@ -47,6 +56,7 @@ function getInfo() {
 
 getInfo();
 
+/*
 !function () {
     function detectDevTools(allow) {
         if (isNaN(+allow)) allow = 100;
@@ -148,3 +158,4 @@ getInfo();
         window.addEventListener('blur', detectDevTools);
     }
 }();
+*/
