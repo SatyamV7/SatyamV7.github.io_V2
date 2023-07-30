@@ -10,11 +10,18 @@
     "orientation": "any",
     "theme_color": "#0a192f",
     "background_color": "#0a192f",
-    "related_applications": [],
+    "related_applications": [
+        {
+            "platform": "webapp",
+            "url": "https://satyamverma.netlify.app/",
+            "id": "392339701203006"
+        }
+    ],
     "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
     "prefer_related_applications": false,
     "display_override": [
-        "standalone"
+        "standalone",
+        "window-controls-overlay"
     ],
     "features": [
         "Cross Platform",
@@ -128,5 +135,8 @@
             "type": "image/png",
             "purpose": "maskable"
         }
-    ]
+    ],
+    "edge_side_panel": {
+        "preferred_width": 0
+    }
 }
