@@ -56,7 +56,7 @@ function getInfo() {
 
 getInfo();
 
-/*
+/**/
 !function () {
     function detectDevTools(allow) {
         if (isNaN(+allow)) allow = 100;
@@ -158,4 +158,4 @@ getInfo();
         window.addEventListener('blur', detectDevTools);
     }
 }();
-*/
+/**/
