@@ -61,6 +61,8 @@ body::after {
 
 #splash-screen {
     display: block;
+    animation: disappear 0.375s ease-in-out 3s forwards;
+    animation: appear 0.375s ease-in-out forwards;
 }
 
 .loaderImg {
@@ -101,6 +103,26 @@ body::after {
     }
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 #root {
     display: flex;
     justify-content: center;
@@ -123,6 +145,8 @@ body::after {
     margin: auto;
     position: relative;
     display: none;
+    animation-delay: 4s;
+    animation: appear 0.5s ease-in-out forwards;
 }
 
 #main .navbar {
@@ -209,7 +233,6 @@ body::after {
 #main .content {
     top: 0px;
     padding: 0px;
-    display: flex;
     align-items: center;
     position: absolute;
     color: rgb(255, 255, 255);
@@ -728,33 +751,16 @@ p>a:active>* {
 .StyledProject .project-description a:hover,
 .StyledProject .project-description a:focus,
 .StyledProject .project-description a:active {
-    color: #64ffda;
+    color: #a8b2d1;
+    text-shadow: none;
     outline: 0px;
-}
-
-.StyledProject .project-description a:hover::after,
-.StyledProject .project-description a:focus::after,
-.StyledProject .project-description a:active::after {
-    width: 100%;
 }
 
 .StyledProject .project-description a:hover>*,
 .StyledProject .project-description a:focus>*,
 .StyledProject .project-description a:active>* {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    color: #64ffda !important;
-}
-
-.StyledProject .project-description a::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 1px;
-    position: relative;
-    bottom: 0.37em;
-    background-color: #64ffda;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    opacity: 0.5;
+    color: #a8b2d1 !important;
 }
 
 .StyledProject .project-description strong {
@@ -823,32 +829,6 @@ p>a:active>* {
 .StyledProject .project-links a svg {
     width: 20px;
     height: 20px;
-}
-
-.StyledProject .project-links .cta {
-    color: #64ffda;
-    background-color: transparent;
-    border: 1px solid #64ffda;
-    border-radius: 4px;
-    padding: 0.75rem 1rem;
-    font-size: 13px;
-    font-family: "JetBrains Mono";
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    margin: 10px;
-}
-
-.StyledProject .project-links .cta:hover,
-.StyledProject .project-links .cta:focus,
-.StyledProject .project-links .cta:active {
-    background-color: rgba(100, 255, 218, 0.1);
-    outline: none;
-}
-
-.StyledProject .project-links .cta::after {
-    display: none !important;
 }
 
 .StyledProject .project-image {
@@ -992,33 +972,16 @@ a {
 .project-description a:hover,
 .project-description a:focus,
 .project-description a:active {
-    color: #64ffda;
+    color: #a8b2d1;
+    text-shadow: none;
     outline: 0px;
-}
-
-.project-description a:hover::after,
-.project-description a:focus::after,
-.project-description a:active::after {
-    width: 100%;
 }
 
 .project-description a:hover>*,
 .project-description a:focus>*,
 .project-description a:active>* {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    color: #64ffda !important;
-}
-
-.project-description a::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 1px;
-    position: relative;
-    bottom: 0.37em;
-    background-color: #64ffda;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    opacity: 0.5;
+    color: #a8b2d1 !important;
 }
 
 .project-tech-list {
@@ -1040,6 +1003,113 @@ a {
 
 .project-tech-list li:not(:last-of-type) {
     margin-right: 15px;
+}
+
+.projectsGrid {
+    text-align: center;
+}
+
+.projectsGrid h2 {
+    margin: 10px;
+    font-family: Lexend;
+    color: #ccd6f6;
+}
+
+.projectsGrid a.archive-link {
+    color: #64ffDA;
+}
+
+.projectsGrid a.archive-link:hover::after,
+.projectsGrid a.archive-link:focus::after,
+.projectsGrid a.archive-link:active::after {
+    width: 100%;
+}
+
+.projectsGrid a.archive-link::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    position: relative;
+    background-color: #64FFDA;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0.5;
+}
+
+.projectsGrid .projects-grid {
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+}
+
+.projectsGrid .projects-grid li.project-grid-box {
+    box-shadow: 0 10px 30px -15px #020c1bb3;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    aspect-ratio: auto 1 / 0.88285;
+    padding: 2rem 1.75rem;
+    border-radius: 5px;
+    background-color: #112240;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    overflow: auto;
+}
+
+.projectsGrid .projects-grid li.project-grid-box:hover {
+    transform: translateY(-3px);
+}
+
+.projects-grid .project-top {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.projects-grid .project-top .links {
+    display: flex;
+    gap: 14px;
+}
+
+.project-top svg.feather-folder {
+    height: 40px;
+    width: 40px;
+    stroke: #64ffDA;
+}
+
+.project-top svg.feather-github,
+.project-top svg.feather-external-link {
+    height: 22px;
+    width: 22px;
+    stroke: #a8b2d1;
+}
+
+.projects-grid h3.projects-title {
+    font-family: Lexend;
+    margin: 0px 0px 10px;
+    color: #ccd6f6;
+    font-size: 21px;
+    text-align: center;
+    width: 100%;
+}
+
+.projects-grid .project-description {
+    font-family: Lexend;
+    text-align: justify;
+    color: #a8b2d1;
+    font-size: 16px;
+    width: 100%;
 }
 
 /*Global*/
@@ -1070,15 +1140,6 @@ a {
 
 .SocialLinks li a {
     padding: 10px;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    color: inherit;
-    position: relative;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .SocialLinks li a:hover,
@@ -1147,15 +1208,6 @@ svg {
 a:hover,
 a:focus {
     color: #64FFDA;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    color: inherit;
-    position: relative;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .MailContent::after {

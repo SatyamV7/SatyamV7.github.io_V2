@@ -5,6 +5,7 @@ const _myExp = document.getElementById('exp')
 const _home = document.getElementById('home')
 const _about = document.getElementById('about')
 const _projects = document.getElementById('projects')
+const _key = "868113f1116f9ef9fe83882d5dbe1ea83854cf4da6242a7cc0dedcf224dd5a83"
 
 
 document.addEventListener('contextmenu', event => event.preventDefault());
@@ -12,7 +13,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 setTimeout(function () {
     document.querySelector('#splash-screen').style.display = 'none';
     document.querySelector('#main').style.display = 'block';
-}, 3000);
+}, 3375);
 
 function onClickStyledMain() {
     _home.style.display = 'flex';
@@ -35,7 +36,7 @@ function onClickStyledAbout() {
 function onClickStyledProjects() {
     _home.style.display = 'none';
     _about.style.display = 'none';
-    _projects.style.display = 'flex';
+    _projects.style.display = 'block';
     document.querySelector('.StyledMain').style.color = '#CCD6F6';
     document.querySelector('.StyledAbout').style.color = '#CCD6F6';
     document.querySelector('.StyledProjects').style.color = '#64FFDA';
@@ -56,7 +57,7 @@ function getInfo() {
 
 getInfo();
 
-/**/
+/*
 !function () {
     function detectDevTools(allow) {
         if (isNaN(+allow)) allow = 100;
@@ -158,4 +159,4 @@ getInfo();
         window.addEventListener('blur', detectDevTools);
     }
 }();
-/**/
+*/
