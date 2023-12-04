@@ -13,7 +13,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 setTimeout(function () {
     document.querySelector('#splash-screen').style.display = 'none';
     document.querySelector('#main').style.display = 'block';
-}, 3375);
+}, 3500);
 
 function onClickStyledMain() {
     _home.style.display = 'flex';
