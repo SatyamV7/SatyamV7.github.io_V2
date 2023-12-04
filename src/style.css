@@ -240,6 +240,12 @@ body::after {
     min-height: 100%;
 }
 
+@media (max-width: 1280px) {
+    #main .content {
+        zoom: 0.75 !important;
+    }
+}
+
 .detectDevTools {
     color: #8892b0;
     position: fixed;
