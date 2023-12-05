@@ -229,7 +229,13 @@ body::after {
     min-height: 100%;
 }
 
-@media (max-width: 1280px) {
+@media (max-height: 805px) {
+    #main .content {
+        zoom: 0.75 !important;
+    }
+}
+
+@media (max-width: 1431px) {
     #main .content {
         zoom: 0.75 !important;
     }
