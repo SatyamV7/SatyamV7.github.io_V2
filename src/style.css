@@ -219,6 +219,116 @@ body::after {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+/* Mobile devices */
+@media (max-width: 544px) {
+    .navbar {
+        padding: 25px 30px !important;
+    }
+
+    .navbar .menu a {
+        font-size: 12px !important;
+    }
+
+    .navbar .menu li.Home,
+    .navbar .menu li.Projects {
+        margin: 0 !important;
+    }
+
+    .navbar .menu li.About {
+        margin: 0 25.5px !important;
+    }
+
+    .StyledAboutTextSection {
+        margin: 25% 10% 15% 10% !important;
+    }
+}
+
+@media (max-width: 621px) {
+    .navbar .menu li {
+        margin: 0 35px;
+    }
+}
+
+@media (max-width :625px) {
+    .StyledTextSection .SmallHeading p {
+        font-size: 15px !important;
+    }
+
+    .StyledTextSection .BigHeading {
+        font-size: 50px !important;
+    }
+
+    .StyledTextSection .BigHeading2 {
+        font-size: 45px !important;
+    }
+}
+
+@media (max-width: 447px) {
+    .StyledTextSection .SmallHeading p {
+        font-size: 13px !important;
+    }
+
+    .StyledTextSection .BigHeading {
+        font-size: 38px !important;
+    }
+
+    .StyledTextSection .BigHeading2 {
+        font-size: 32px !important;
+    }
+
+    .StyledTextSection .StyledIntro {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 885px) {
+    .navbar {
+        justify-content: space-evenly !important;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 781px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .StyledSocialSection,
+    .StyledMailSection {
+        display: none;
+    }
+
+    .StyledTextSection {
+        width: 100% !important;
+        margin: 0 10% !important;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    .StyledAboutTextSection {
+        width: auto !important;
+        margin: 20% 10% 10% 10% !important;
+    }
+
+    .StyledImageSection {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 544px) {
+    .StyledAboutTextSection {
+        margin: 25% 10% 15% 10% !important;
+    }
+}
+
 #main .content {
     top: 0px;
     padding: 0px;
@@ -254,7 +364,7 @@ body::after {
 /*Home*/
 .StyledTextSection {
     width: 40%;
-    margin-left: 20%;
+    margin: 0 20%;
 }
 
 .StyledTextSection .SmallHeading {
