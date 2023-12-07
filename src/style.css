@@ -283,12 +283,14 @@ body::after {
     section {
         margin: 0 4.5% !important;
     }
+
     .Heading {
-        font-size: 30px;
-        margin: 0 0 15px 0;
+        font-size: 30px !important;
+        margin: 0 0 15px 0 !important;
     }
+
     .Heading font {
-        font-size: 22.5px;
+        font-size: 22.5px !important;
     }
 }
 
