@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.appear {
+    animation: appear 0.5s ease-in-out forwards;
+}
+
 ::-webkit-scrollbar {
     width: 17px;
     display: block;
