@@ -7,7 +7,6 @@ const _about = document.getElementById('about')
 const _projects = document.getElementById('projects')
 const _key = "868113f1116f9ef9fe83882d5dbe1ea83854cf4da6242a7cc0dedcf224dd5a83"
 
-
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 setTimeout(function () {
