@@ -9,6 +9,11 @@ const _key = "868113f1116f9ef9fe83882d5dbe1ea83854cf4da6242a7cc0dedcf224dd5a83"
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+document.addEventListener('mousemove', (e) => {
+    console.log(`Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`);
+    _main.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+});
+
 setTimeout(function () {
     document.querySelector('#splash-screen').style.display = 'none';
     document.querySelector('#main').style.display = 'block';

@@ -132,13 +132,15 @@ body::after {
 #main {
     height: 100%;
     width: 100%;
-    background: transparent;
     z-index: 12;
     border-radius: 5px;
     margin: auto;
     position: relative;
     display: none;
     animation-delay: 4s;
+    transition-duration: 0.3s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     animation: appear 0.5s ease-in-out forwards;
 }
 
