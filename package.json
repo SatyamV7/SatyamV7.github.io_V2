@@ -3,7 +3,7 @@
     "description": "",
     "version": "1.0.0",
     "scripts": {
-        "test": "serve",
+        "test": "npx serve",
         "deploy": "firebase deploy"
     },
     "repository": {

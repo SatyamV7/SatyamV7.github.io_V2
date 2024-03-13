@@ -9,17 +9,26 @@ const _key = "868113f1116f9ef9fe83882d5dbe1ea83854cf4da6242a7cc0dedcf224dd5a83"
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
-document.addEventListener('mousemove', (e) => {
-    console.log(`Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`);
-    _main.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
-});
-
 setTimeout(function () {
     document.querySelector('#splash-screen').style.display = 'none';
     document.querySelector('#main').style.display = 'block';
 }, 3500);
 
-function onClickStyledMain() {
+window.onload = softNavigation;
+
+function softNavigation() {
+    if (document.location.hash === '' || document.location.hash == '#home') {
+        Home();
+    }
+    else if (document.location.hash == '#about') {
+        About();
+    }
+    else if (document.location.hash == '#projects') {
+        Projects();
+    }
+}
+
+function Home() {
     _home.style.display = 'flex';
     _about.style.display = 'none';
     _projects.style.display = 'none';
@@ -29,7 +38,7 @@ function onClickStyledMain() {
     document.querySelector('.StyledProjects').style.color = '#CCD6F6';
 }
 
-function onClickStyledAbout() {
+function About() {
     _home.style.display = 'none';
     _about.style.display = 'flex';
     _projects.style.display = 'none';
@@ -39,7 +48,7 @@ function onClickStyledAbout() {
     document.querySelector('.StyledProjects').style.color = '#CCD6F6';
 }
 
-function onClickStyledProjects() {
+function Projects() {
     _home.style.display = 'none';
     _about.style.display = 'none';
     _projects.style.display = 'block';
